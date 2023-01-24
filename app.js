@@ -9,6 +9,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+//array for items and workItems
 const items = [];
 const workItems = [];
 
