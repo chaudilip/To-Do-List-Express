@@ -3,12 +3,16 @@
         <h1> <%= listTitle %></h1>
     </div>
     <div class="box">
-            <%  for(var i=0;i<newListItems.length;i++){ %>
+            <%  newListItems.forEach(function(item){ %>
+                <form  action="/delete" method="post">
                 <div class="item">
-                    <input type="checkbox">
-                    <p><%= newListItems[i] %></p>
+                    <!-- passing the value to the delete route using item array from the database onchange for submit the form -->
+                    <input type="checkbox" name="checkbox" value="<%= item._id %>" onchange="this.form.submit()">
+                    <p><%= item.name %></p> 
                 </div>
-             <% } %>
+                <input type="hidden" name="listName" value="<%= listTitle %>"></input>
+            </form>
+             <% }); %>
              <form  class="item" action="/" method="post">
                 <input type="text" name="newItem" id="" placeholder="New Item" autocomplete="off"> 
                 <button type="submit" name="list" value=<%= listTitle %>>+</button>
