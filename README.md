@@ -5,7 +5,8 @@ Embedded Js - EJS for code resuability 😎 .
 Exporting modules with Node 👻 .
 GET POST Request using Express 🌟 . 
 We will add more features and functionality in future so until then stay tune 🌟.
-if you have any suggestion pls let us know ! 🫡❤️.
+if you have any suggestion pls let me know ! 🫡❤️.
+i also added some comment on important code if you want to read ☠️ .
 
 
 --Database--
